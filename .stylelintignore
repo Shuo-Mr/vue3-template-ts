@@ -1,0 +1,5 @@
+*.vue
+node_modules/**/*.scss
+dist/**/*.css
+*.html
+*.vue
