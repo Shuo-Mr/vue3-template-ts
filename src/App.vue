@@ -3,18 +3,18 @@
  * @Author:
  * @Date: 2022-08-08 11:00:07
  * @LastEditors: Xiaochun liu
- * @LastEditTime: 2022-08-08 15:18:06
+ * @LastEditTime: 2022-08-11 18:24:54
 -->
 <template>
   <nav>
-    <router-link to="/">Home</router-link> |
-    <router-link to="/about">About</router-link> |
+    <router-link to="/">Home</router-link> | <router-link to="/about">About</router-link> |
     <router-link to="/demo">Demo</router-link>
   </nav>
-  <router-view/>
+  <router-view />
 </template>
 
 <style lang="scss">
+@import '@/assets/style/flex.scss';
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
