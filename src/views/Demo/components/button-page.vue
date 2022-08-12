@@ -3,11 +3,11 @@
  * @Author:
  * @Date: 2022-08-11 16:14:09
  * @LastEditors: Xiaochun liu
- * @LastEditTime: 2022-08-11 16:30:42
+ * @LastEditTime: 2022-08-12 14:41:55
 -->
 <template>
   <div>
-    <div>{{ title }}</div>
+    <h3>{{ title }}</h3>
     <el-button :icon="Search" circle />
     <el-button type="primary" :icon="Edit" circle />
     <el-button type="success" :icon="Check" circle />
