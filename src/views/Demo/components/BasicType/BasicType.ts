@@ -2,8 +2,8 @@
  * @Description: 基础类型
  * @Author: Xiaochun liu
  * @Date: 2022-08-12 13:46:33
- * @LastEditors: Xiaochun liu
- * @LastEditTime: 2022-08-12 14:04:35
+ * @LastEditors: liangshuo liangshuoone@aliyun.com
+ * @LastEditTime: 2022-08-12 17:28:22
  */
 import { defineComponent } from 'vue';
 
