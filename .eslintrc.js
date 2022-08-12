@@ -3,7 +3,7 @@
  * @Author:
  * @Date: 2022-08-08 11:00:07
  * @LastEditors: Xiaochun liu
- * @LastEditTime: 2022-08-11 18:22:47
+ * @LastEditTime: 2022-08-12 11:33:50
  */
 module.exports = {
   root: true,
@@ -21,9 +21,12 @@ module.exports = {
   },
   rules: {
     'no-shadow': 'off',
-    '@typescript-eslint/no-shadow': 'off',
     'no-console': process.env.NODE_ENV === 'production' ? 'warn' : 'off',
     'no-debugger': process.env.NODE_ENV === 'production' ? 'warn' : 'off',
+    // 枚举 is already declared in the upper scope
+    '@typescript-eslint/no-shadow': 'warn',
+    // 枚举成员 is defined but never used
     '@typescript-eslint/no-unused-vars': ['error'],
+    '@typescript-eslint/no-explicit-any': ['off'], // ts 定义数据类型为any不报错
   },
 };

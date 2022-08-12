@@ -2,8 +2,8 @@
  * @Description: file content
  * @Author: Liang Shuo
  * @Date: 2022-08-08 11:00:07
- * @LastEditors: Xiaochun liu
- * @LastEditTime: 2022-08-11 18:32:08
+ * @LastEditors: liangshuo liangshuoone@aliyun.com
+ * @LastEditTime: 2022-08-12 16:37:19
 -->
 <template>
   <div class="home">
