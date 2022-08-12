@@ -3,12 +3,12 @@
  * @Author: Xiaochun liu
  * @Date: 2022-08-12 13:45:14
  * @LastEditors: Xiaochun liu
- * @LastEditTime: 2022-08-12 14:41:13
+ * @LastEditTime: 2022-08-12 16:15:30
 -->
 <template>
-  <div class="basic-type-wrap">
+  <div class="wrapper">
     <h3>basic-type 基础类型</h3>
-    <div class="basic-type-cont">
+    <div class="content">
       <div>Boolean isDone:{{ isDone }}</div>
       <div>Number decLiteral: {{ decLiteral }}</div>
       <div>String name: {{ name }}</div>
@@ -18,4 +18,3 @@
 </template>
 
 <script lang="ts" src="./basic-type.ts"></script>
-<style lang="scss" scoped src="./basic-type.scss"></style>

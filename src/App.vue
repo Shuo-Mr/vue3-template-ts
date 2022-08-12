@@ -1,9 +1,9 @@
 <!--
  * @Description: file content
- * @Author:
+ * @Author: 梁烁
  * @Date: 2022-08-08 11:00:07
  * @LastEditors: Xiaochun liu
- * @LastEditTime: 2022-08-11 18:24:54
+ * @LastEditTime: 2022-08-12 16:14:54
 -->
 <template>
   <nav>
@@ -14,7 +14,7 @@
 </template>
 
 <style lang="scss">
-@import '@/assets/style/flex.scss';
+@import '@/assets/style/index.scss';
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
