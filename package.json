@@ -52,5 +52,8 @@
     "*.{scss,less}": [
       "stylelint --fix"
     ]
+  },
+  "engines": {
+    "node": ">=16.16.0"
   }
 }
