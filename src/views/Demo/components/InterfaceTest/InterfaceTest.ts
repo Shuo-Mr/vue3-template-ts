@@ -2,8 +2,8 @@
  * @Description: 接口练习
  * @Author: Xiaochun liu
  * @Date: 2022-08-12 16:03:48
- * @LastEditors: Xiaochun liu
- * @LastEditTime: 2022-08-12 16:26:55
+ * @LastEditors: Lxc 1533761120@qq.com
+ * @LastEditTime: 2022-09-01 15:30:38
  */
 import { defineComponent } from 'vue';
 
@@ -14,12 +14,14 @@ interface LabelledValue {
 export default defineComponent({
   name: 'interfaceTest',
   setup() {
-    function printLabel(labelledObj: LabelledValue) {
-      console.log('printLabel:', labelledObj.label);
+    function printLabel(labelledObj: LabelledValue): string {
+      return `printLabel:${labelledObj.label}`;
     }
     const myObj = { size: 10, label: 'Size 10 Object' };
-    printLabel(myObj);
+    const print: string = printLabel(myObj);
 
-    return {};
+    return {
+      print,
+    };
   },
 });

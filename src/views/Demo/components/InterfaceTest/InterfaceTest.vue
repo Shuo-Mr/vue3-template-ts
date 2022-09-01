@@ -2,13 +2,15 @@
  * @Description: 接口练习
  * @Author: Xiaochun liu
  * @Date: 2022-08-12 16:03:37
- * @LastEditors: liangshuo liangshuoone@aliyun.com
- * @LastEditTime: 2022-08-12 16:58:13
+ * @LastEditors: Lxc 1533761120@qq.com
+ * @LastEditTime: 2022-08-12 18:02:06
 -->
 <template>
   <div class="wrapper">
     <h3>interface 接口</h3>
-    <div class="content"></div>
+    <div class="content">
+      <div>{{ print }}</div>
+    </div>
   </div>
 </template>
 
