@@ -3,7 +3,7 @@
  * @Author: Xiaochun liu
  * @Date: 2022-08-12 16:03:37
  * @LastEditors: Lxc 1533761120@qq.com
- * @LastEditTime: 2022-09-02 10:22:13
+ * @LastEditTime: 2022-09-02 13:44:24
 -->
 <template>
   <div class="wrapper">
@@ -13,6 +13,7 @@
       <div>可选属性 mySquare: {{ mySquare }}</div>
       <div>只读属性 a: {{ a }} ro: {{ ro }}</div>
       <div>函数类型 mySearch('word', 'w'): {{ mySearch('word', 'w')}}</div>
+
     </div>
   </div>
 </template>

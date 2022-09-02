@@ -3,7 +3,7 @@
  * @Author: Xiaochun liu
  * @Date: 2022-08-12 16:03:48
  * @LastEditors: Lxc 1533761120@qq.com
- * @LastEditTime: 2022-09-02 10:38:33
+ * @LastEditTime: 2022-09-02 14:11:13
  */
 import { defineComponent } from 'vue';
 
@@ -31,6 +31,43 @@ interface SearchFunc {
 interface StringArray {
   // 当用 number去索引StringArray时会得到string类型的返回值
   [index: number]: string
+}
+
+// 类和接口
+// interface ClockInterface {
+//   currentTime: Date;
+//   setTime: (d: Date) => void;
+// }
+// class Clock implements ClockInterface {
+//   currentTime: Date;
+//   // currentTime!: Date; // !声明的时候断言，解决因为没有在初始化的时候赋值出现报错，或者初始化时赋值this.currentTime = new Date();
+
+//   setTime(d: Date) {
+//     this.currentTime = d;
+//   }
+
+//   constructor(h: number, m: number) {
+//     this.currentTime = new Date();
+//     console.log(h, m);
+//   }
+// }
+
+// 继承接口,一个接口可以继承多个接口，创建出多个接口的合成接口
+interface Shape {
+  color: string;
+}
+interface PenStroke {
+  penWidth: number;
+}
+interface Square extends Shape, PenStroke {
+  sideLength: number;
+}
+
+// 混合类型
+interface Counter {
+  (start: number): string;
+  interval: number;
+  reset(): void;
 }
 
 export default defineComponent({
@@ -80,6 +117,28 @@ export default defineComponent({
     const myArray: StringArray = ['Bob', 'Fred'];
     const myStr: string = myArray[0];
     console.log('myStr', myStr);
+
+    // ClockInterface Clock
+    // console.log(Clock);
+
+    // 继承接口
+    const square = <Square>{};
+    square.color = 'blue';
+    square.sideLength = 10;
+    square.penWidth = 5.0;
+    console.log(square);
+
+    // 混合类型
+    function getCounter(): Counter {
+      const counter = <Counter> function StartCounter(start: number) { console.log(start); };
+      counter.interval = 123;
+      counter.reset = function ResetCounter() { console.log('ResetCounter'); };
+      return counter;
+    }
+    const c = getCounter();
+    c(10);
+    c.reset();
+    c.interval = 5.0;
 
     return {
       print,
