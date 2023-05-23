@@ -2,13 +2,13 @@
  * @Description: demo
  * @Author: Xiaochun liu
  * @Date: 2022-08-12 13:44:05
- * @LastEditors: Xiaochun liu
- * @LastEditTime: 2023-05-09 13:45:49
+ * @LastEditors: Lxc 1533761120@qq.com
+ * @LastEditTime: 2023-05-22 10:23:14
  */
 import { defineComponent, ref } from 'vue';
 import MyMenu from '@/components/my-menu/my-menu.vue';
-import BasicType from './components/BasicType';
-import InterfaceTest from './components/InterfaceTest';
+import ListTransition from './components/ListTransition';
+import Canvas from './components/Canvas';
 
 type menuItem = {
   title: string,
@@ -16,16 +16,16 @@ type menuItem = {
 }
 
 export default defineComponent({
-  components: { BasicType, InterfaceTest, MyMenu },
-  async setup() {
+  components: { MyMenu, ListTransition, Canvas },
+  setup() {
     // 菜单列表
     const menuList: menuItem[] = [
       {
-        title: 'BasicType',
-        icon: 'Watermelon',
+        title: 'ListTransition',
+        icon: 'List',
       }, {
-        title: 'InterfaceTest',
-        icon: 'Pear',
+        title: 'Canvas',
+        icon: 'Picture',
       },
     ];
     const mainIndex = ref('');
